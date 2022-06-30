@@ -1,0 +1,555 @@
+body {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family:sans-serif;
+    color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #232222;
+}
+
+span {
+    color: #19B5FE
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: yellow;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: yellow;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: yellow;
+}
+
+/*********** Navbar ***********/
+.nav-menu {
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-nav > li > a {
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    background: transparent !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    color: #fff !important;
+    padding: 10px 30px 10px;
+    font-weight: 600;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active,
+.navbar-nav > li.active > a {
+    color: #19B5FE !important;
+    background: transparent !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 3px solid #19B5FE!important;
+    padding-bottom: 13px;
+}
+
+.navbar.in-top {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar {
+    z-index: 9;
+}
+
+.pad-menu {
+    padding-top: 10px;
+    font-size: 40px;
+    color: #fff !important;
+    font-weight: 700;
+}
+.pad-menu span {
+    padding-top: 10px;
+    font-size: 40px;
+    color: #19B5FE;
+    font-weight: 700;
+}
+
+.bg-nav {
+    background: #000;
+    box-shadow: 0 3px 2px #000;
+    z-index: 99;
+    padding-top: 20px;
+    border-radius: 0;
+}
+.bg-nav .pad-menu {
+    background: #000;
+    box-shadow: 0 3px 2px #000;
+    z-index: 99;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #fff !important;
+    font-weight: 700;
+}
+.bg-nav .pad-menu span {
+    background: #000;
+    box-shadow: 0 3px 2px #000;
+    z-index: 99;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #19B5FE;
+    font-weight: 700;
+}
+
+/*********** Penutup Navbar ***********/
+
+
+/*********** Header ***********/
+.header {
+    height: 100vh;
+}
+
+.padtop-header{
+    padding-top: 280px;
+}
+
+ .padtop-teks {
+    padding-top: 20px;
+ }
+ .pad-btn {
+    padding-top: 20px;
+ }
+ .h1{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.h1 span{
+    color: #19B5FE;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.h3{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+a.btn-explore {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #19B5FE;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+}
+
+a.btn-explore:hover {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #19B5FE;
+    background-color: #fff;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/*********** Penutup Header ***********/
+
+
+/*********** About ***********/
+.section-about {
+    padding: 90px 0px;
+}
+
+
+
+.about-foto {
+    padding: 0px 0px;
+}
+.deksripsi-about {
+    margin-top: 55px;
+    border-left: 2px solid #ccc;
+    padding: 10px 40px 10px 25px;
+    text-align: justify;
+}
+.deksripsi-about h2{
+    color: #19B5FE;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.deksripsi-about p{
+    margin: 0px;
+}
+
+/*********** Penutup About ***********/
+
+
+/*********** portfolio ***********/
+.section-portfolio {
+    padding: 90px 0px;
+    background: #efefef;
+}
+
+.portfolio-item {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+}
+
+.info-portfolio {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    color: #FFF;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(85, 172, 239, 0.8);
+    transition:all .3s;
+}
+.info-portfolio:hover {
+    opacity: 1;
+}
+.info-portfolio .tb-cell {
+    height: 100%;
+}
+
+.icon-portfolio {
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #55ACEF;
+    font-size: 16px;
+    height: 55px;
+    line-height: 55px;
+    margin: 75px auto 20px;
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0.2s;
+    width: 55px;
+}
+.text-portfolio {
+    top: -100%;
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0.2s;
+}
+.info-portfolio h4 {
+    color: #FFF;
+    font-weight: 500;
+}
+
+/*********** Penutup portfolio ***********/
+
+
+/*********** BLOG ***********/
+.section-blog {
+    padding: 90px 0px;
+    background: #fff;
+}
+
+.blog-item {
+    box-shadow: 0 0 20px #ccc;
+    position: relative;
+}
+
+.blog-img {
+    width: 100%;
+}
+
+.blog-body {
+    padding: 30px 20px;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+}
+.blog-body h4{
+    margin: 0px 0px 10px;
+}
+
+.blog-body p{
+    margin: 0px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.blog-baca {
+    padding: 10px;
+    background-color: #19B5FE;
+    text-align: center;
+    color: #fff;
+    font-weight: 600; 
+    display: block;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+}
+.blog-baca:hover {
+    background-color: #fff;
+    color: #19B5FE;
+    text-decoration: none;
+}
+
+/*********** Penutup BLOG ***********/
+
+
+/*********** team ***********/
+.section-team {
+    padding: 90px 0px 110px;
+    background: #efefef;
+}
+
+.wrap-team{
+    margin: 0px 200px; 
+}
+
+.team-item {
+    background:transparent;
+    position: relative;
+}
+
+.team-img {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.team-body {
+    padding: 20px 0px 0px;
+    background: transparent;
+    text-align: center;
+}
+.team-body h4{
+    margin: 0px;
+    font-size: 19px;
+}
+
+.team-body p{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.team-sosmed{
+    list-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+}
+
+.team-sosmed li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.team-sosmed a{
+    color: #555;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+.team-sosmed a.facebook:hover{
+    color: blue;
+}
+.team-sosmed a.instagram:hover{
+    color: #E1306C;
+}
+.team-sosmed a.twitter:hover{
+    color: #00acee;
+}
+.team-sosmed a.linkedin:hover{
+    color: #00acee;
+}
+.team-sosmed li i{
+    font-size: 20px;
+}
+
+/*********** Penutup team ***********/
+
+
+/*********** Kontak ***********/
+.section-contact {
+    padding: 80px 0px 20px;
+    background-color: #000;
+}
+
+.title-contact {
+    margin-bottom: 60px;
+}
+
+.title-contact h1 {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.title-contact span{
+    background: none repeat scroll 0px 0px #19B5FE;
+    display: block;
+    height: 4px;
+    margin: 0px auto 80px;
+    width: 100px;
+    border-radius: 200px;
+}
+
+.info-kontak {
+    margin-bottom: 20px;
+}
+
+.detail-contact{
+    margin-bottom: 30px;
+
+}
+
+.detail-contact h3:first-letter {
+    border-bottom: 4px solid #19B5FE;
+}
+
+.detail-contact h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin-top: 0px;
+}
+
+.detail-contact .info {
+    position: relative;
+}
+
+.detail-contact .info i{
+    font-size: 20px;
+    color: #B3B3B3;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.detail-contact .info p{
+    font-size: 14px;
+    color: #B3B3B3;
+    display:inline-block;
+    margin:0;
+}
+
+.form-group .form-control {
+    padding: 7px 12px;
+    border-color: #ddd;
+    box-shadow: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+textarea#message{
+    resize: none;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 40px;
+}
+
+.btn-lg {
+    background: transparent;
+    color: #ddd;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 8px 14px;
+    font-weight: 700;
+    width: 100%;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-lg:hover {
+    color:#19B5FE;
+    background:#fff;
+    border: 1px solid transparent;
+}
+
+.row-border {
+    border-top: 2px solid #444;
+}
+.pad {
+    padding: 20px 0px 0px 0px;
+}
+
+.pad a {
+    color: #ddd;
+    transition: all 0.3s;
+}
+
+.pad a:hover {
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: all 0.3s;
+}
+
+.top-scroll {
+    background: none repeat scroll 0% 0% #19B5FE;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 5px 12px;
+    transition: all 0.3s ease 0s;
+    color: #fff
+}
+.top-scroll:hover {
+    background: none repeat scroll 0% 0% #19B5FE;
+    border-radius: 100px;
+    font-size: 25px;
+    padding: 8px 15px;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+}
+
+/*********** Penutup Kontak ***********/
+
+
+/*********** Universal ***********/
+.section-title {
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+
+.section-title h1 {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*********** Penutup Universal ***********/
